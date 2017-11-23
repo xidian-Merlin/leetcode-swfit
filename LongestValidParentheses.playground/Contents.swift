@@ -43,8 +43,7 @@ class Solution {
     func longestValidParentheses(_ s: String) -> Int {
         let ss = Stack()
         var maxLen = 0
-        let array: [Character] = ([Character])(s.characters)
-        for (index,value) in array.enumerated(){
+        for (index,value) in s.characters.enumerated(){
             if value == "(" {
                 ss.push((index,value))
             }else{
